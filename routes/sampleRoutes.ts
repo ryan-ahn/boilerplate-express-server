@@ -5,6 +5,4 @@ const router: Router = Router();
 
 router.post('/', sampleControllers.sampleController);
 
-module.exports = router;
-
 export default router;

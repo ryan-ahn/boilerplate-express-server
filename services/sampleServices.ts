@@ -1,8 +1,6 @@
-const sampleService = async () => {
-  return {
-    message: 'S000000'
-  };
-};
+const sampleService = async () => ({
+  message: 'S000000',
+});
 
 export default {
   sampleService,
