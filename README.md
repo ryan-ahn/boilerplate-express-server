@@ -2,14 +2,14 @@
 
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-express-tsnode)
+![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-express-server)
 
 ## Setting Stack
 - Environment : node
 - Framework : express
-- database : mongoDB
-- odm : mongoose
-- type : ts-node & typescript
+- Database : mongoDB
+- ODM : mongoose
+- Type : ts-node & typescript
 
 ## Project Start
 1. nodemon 설치
@@ -18,8 +18,8 @@ $ npm install -g nodemon
 ```
 2. clone & dependencies 설치
 ```
-$ git clone ryan-ahn/boilerplate-backend-express
-$ cd boilerplate-backend-express
+$ git clone ryan-ahn/boilerplate-express-server
+$ cd boilerplate-express-server
 $ npm install
 ```
 
