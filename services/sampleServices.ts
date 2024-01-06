@@ -1,5 +1,7 @@
 const sampleService = async () => {
-  return `Success`;
+  return {
+    message: 'S000000'
+  };
 };
 
 export default {

@@ -1,4 +1,4 @@
-const util = {
+const response = {
   success: (status: number, message: string, data?: any) => {
     return {
       status,
@@ -7,7 +7,7 @@ const util = {
       data,
     };
   },
-  fail: (status: number, message: string, data?: any) => {
+  fail: (status: number, message: string) => {
     return {
       status,
       success: false,
@@ -16,4 +16,4 @@ const util = {
   },
 };
 
-export default util;
+export default response;
