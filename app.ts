@@ -3,7 +3,6 @@ import config from './config';
 import connectDB from './loaders/db';
 import routes from './routes';
 import cors, { CorsOptions } from 'cors';
-require('dotenv').config();
 
 // Connect MongoDB
 connectDB();
@@ -11,11 +10,10 @@ connectDB();
 // Cors
 const corsOptions: CorsOptions = {
   origin: (origin: string | undefined, callback: any) => {
-    // Origin 입력 필요 (임시로 true)
-    if (true) {
+    if (origin === undefined || origin === config.originHost) {
       callback(null, true);
     } else {
-      callback(new Error('Not Allowed Origin!'));
+      callback(new Error('F900002'));
     }
   },
   credentials: true,

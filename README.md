@@ -39,9 +39,10 @@ $ npm run dev
 - ESLint + StyleLint + Prettier 포메터 조합
 
 ## Code Structure
-&nbsp;⎣&nbsp;**config** - config 설정 <br/>
-&nbsp;⎣&nbsp;**controllers** - 에러 핸들링 <br/>
-&nbsp;⎣&nbsp;**interfaces** - database model, schema, request & response type 코드 등 <br/>
-&nbsp;⎣&nbsp;**loaders** - database 연결 <br/>
+&nbsp;⎣&nbsp;**config** - 환경 설정 <br/>
+&nbsp;⎣&nbsp;**constant** - 정적 리소스 <br/>
+&nbsp;⎣&nbsp;**controllers** - 리퀘스트 핸들링 <br/>
+&nbsp;⎣&nbsp;**interfaces** - 타입 지정 <br/>
+&nbsp;⎣&nbsp;**loaders** - 외부 서비스 연결 <br/>
 &nbsp;⎣&nbsp;**modules** - utils, handler, hooks 등 <br/>
-&nbsp;⎣&nbsp;**services** - 비즈니스 로직 <br/>
+&nbsp;⎣&nbsp;**services** - 서비스 로직 <br/>

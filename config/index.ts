@@ -1,18 +1,23 @@
 import dotenv from 'dotenv';
 
-const envFound = dotenv.config();
-if (envFound.error) {
-  throw new Error("⚠️  Couldn't find .env file  ⚠️");
-}
+dotenv.config();
+
+const port = process.env.PORT;
+const apiHost = process.env.API_HOST;
+const originHost = process.env.ORIGIN_HOST;
+const mongoURI = process.env.MONGODB_URL as string;
+const jwtSecretKey = process.env.JWT_SECRET_KEY as string;
+const awsAccessKey = process.env.AWS_ACCESS_KEY as string;
+const awsSecretKey = process.env.AWS_SECRET_KEY as string;
+const cryptoKey = process.env.CRYPTO_SECRET_KEY as string;
 
 export default {
-  port: process.env.PORT,
-  mongoURI:
-    process.env.NODE_ENV === 'development'
-      ? (process.env.MONGODB_DEV_URL as string)
-      : (process.env.MONGODB_PROD_URL as string),
-  nodeWhiteList:
-    process.env.NODE_ENV === 'development'
-      ? [process.env.DEV_ROOT_ORIGIN]
-      : [process.env.PROD_WWW_ORIGIN, process.env.PROD_ROOT_ORIGIN],
+  port,
+  apiHost,
+  mongoURI,
+  originHost,
+  jwtSecretKey,
+  awsAccessKey,
+  awsSecretKey,
+  cryptoKey,
 };
